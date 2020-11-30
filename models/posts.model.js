@@ -4,11 +4,11 @@ const Schema = mongoose.Schema
 const postSchema = new Schema({
     avatar:{
         type: String,
-        required:true
+        required: false
     },
     name: {
         type:String,
-        required:true
+        required:false
     },
     caption:{
         type:String,
@@ -16,7 +16,7 @@ const postSchema = new Schema({
     },
     ImgUrl: {
         type:String,
-        required:true
+        required:false
     }
 })
 const Post = mongoose.model('Post',postSchema)
